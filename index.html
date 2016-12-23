@@ -15,117 +15,12 @@
     <header>
         <navigation/>
     </header>
-    <div id="main_image">
-        <div id="content">
-            <div class="container">
-                <center>
-                    <h1 id="intro-name">Hello! I am Anh Nguyen.</h1>
-                    <h1 id="intro-title">WEB DEVELOPER</h1>
-                    <h2 id="first_line">I am a software engineer who strongly believe that</h2>
-                    <br>
-                    <h2 id="second_line">SIMPLICITY is the key to high SCALIBILITY.<span>|</span></h2>
-                </center>
-            </div>
-        </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4" id="portrait">
-                    <img src="image/portrait.jpg" class="img-responsive" alt="">
-                </div>
-                <div class="col-md-8" id="personal">
-                    <center>
-                        <h1>ABOUT ME</h1>
-                        <p><span>#AnhNguyen #22 #VietNam #Espoo #Finland #2ndYear #IT #Student #Metropolia #Young #Diligent #Dynamic #Hard-working #Dedicated #Full-stack #Web-developer #Front-end #Back-end #Design #looking_for_oppotunity
-                        </p>
-                        <div class="row" style="padding-top: 70px">
-                            <div class="col-md-4">
-                                <img src="https://cdn2.iconfinder.com/data/icons/flat-seo-web-ikooni/128/flat_seo-08-512.png" alt="">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://img.talkandroid.com/uploads/2015/11/linkedin-app-logo.png" alt="">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://static.wixstatic.com/media/51a5bd_6e89080215274fd7975c23895800b7b1~mv2.png" alt="">
-                            </div>
-                        </div>
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="technology" ng-controller="technology">
-        <div class="container">
-            <center>
-                <h1>Familiar technologies</h1>
-            </center>
-            <div class="row" style="margin-bottom: 60px;">
-                <div class="col-md-2" ng-repeat="technology in technologies">
-                    <img ng-src={{technology.image}}  data-toggle="tooltip" data-placement="bottom" title={{technology.name}} alt={{technology.name}} onmouseenter="$(this).tooltip('show')">
-                </div>
-            </div>      
-        </div>
-    </div>
-
-    <div id="skills" ng-controller="skills">
-        <div class="container">
-            <center>
-                <h1>My skills</h1>
-            </center>
-
-            <div class="row" ng-repeat="skill in skills">
-                <div class="col-sm-4">
-                    <h2>{{skill.name}}</h2>
-                </div>
-                <div class="col-sm-7 outer-level">
-                    <div class="level-bar" ng-style="{'width': skill.level+'%'}"></div>
-                    <span class="percent">{{skill.level}}%</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="project-banner">
-        <h1>Side projects</h1>
-    </div>
-    <div id="projects" ng-controller="projects">
-        <div class="container">
-            <div class="row" ng-repeat="project in projects">
-                <div ng-class="{'col-md-7' :true, 'col-md-push-5': $index%2 !== 0}">
-                    <h1>{{project.name}}</h1>
-                    <p>{{project.description}}
-                        <hr> Github repository of this project: <a ng-href="{{project.github}}"> Click here</a></p>
-                </div>
-                <div ng-class="{'col-md-5':true, 'col-md-pull-7': $index%2 !== 0}">
-                    <div class="project-image" ng-style="{'background-image': 'url({{project.image}})'}">
-                        <div>
-                            <div class="filter"></div>
-                            <a ng-href="{{project.demo}}">VIEW DEMO</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <center>
-            <h1>Contact me!</h1>
-        </center>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-offset-3">
-                    <ul>
-                        <li><span class="glyphicon glyphicon-earphone"></span> <b>Phone number:</b> +358465666645</li>
-                        <li>
-                            <span class="glyphicon glyphicon-envelope"></span> <b>Email:</b> anhnguyen6281@gmail.com</li>
-                        <li><span class="glyphicon glyphicon-globe"></span> <b>Address:</b> Siltakuja 2 B, 25, Espoo, Finland</li>
-                    </ul>
-                </div>
-            </div>
-            <center>© Copyright 2016 Anh Nguyen</center>
-        </div>
-    </footer>
+    <mainpage></mainpage>
+    <about></about>
+    <techno></techno>
+    <skills></skills>
+    <projects></projects>
+    <foot></foot>
     <script src="app.js"></script>
 </body>
 

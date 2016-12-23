@@ -3,10 +3,104 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+@media screen and (min-width: 700px) {
+    .navbar-inverse {
+        background-color: transparent !important;
+    }
+    nav {
+        border-width: 0px !important;
+    }
+    #about {
+        height: 70vh;
+    }
+    #portrait img {
+        height: 100% !important;
+    }
+    #portrait {
+        padding-left: 0px !important;
+    }
+    #personal img {
+        height: 120px;
+    }
+    #personal .row {
+        padding-top: 70px;
+    }
+    #technology img {
+        height: 150px;
+    }
+    .tooltip {
+        top: 110px !important;
+    }
+    #skills h2 {
+        margin: 0px 20px 0px 0px !important;
+        text-align: right;
+    }
+    #non-animate {
+        display: none;
+    }
+}
+
 nav a {
     font-size: 20px;
     padding: 27px !important;
-    color: white;
+    color: white !important;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: #e7e7e7 !important;
+    color: #222 !important;
+}
+
+@media screen and (max-width: 700px) {
+    #main_image {
+        height: 600px;
+    }
+    #content h1 {
+        font-size: 20px !important;
+        animation: none !important;
+    }
+    #content h2 {
+        font-size: 20px !important;
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    #first_line,
+    #second_line {
+        font-size: 20px !important;
+        animation: none !important;
+        visibility: visible !important;
+    }
+    #portrait {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    #personal img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    #technology img {
+        height: 40px;
+    }
+    .tooltip {
+        top: 0px !important;
+    }
+    #skills h2 {
+        text-align: left;
+    }
+    footer ul {
+        padding-left: 0px !important;
+    }
+    footer {
+        word-wrap: break-word;
+    }
+    #animate {
+        display: none;
+    }
+    #main_image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/bg-mobile.jpg') !important;
+    }
 }
 
 #main_image {
@@ -103,9 +197,9 @@ h2> span {
 }
 
 #about {
-    height: 70vh;
     background-color: #222222;
     color: white;
+    position: relative;
 }
 
 #personal h1 {
@@ -117,31 +211,14 @@ h2> span {
     font-size: 20px;
 }
 
-#personal img {
-    height: 120px;
-}
-
-#portrait img {
-    height: 100% !important;
-}
-
-#about #portrait {
-    padding-left: 0px !important;
-}
-
 #technology center {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 #technology img {
-    height: 150px;
     filter: grayscale(100%);
     transition-duration: 0.4s;
-}
-
-.tooltip {
-    top: 110px !important;
 }
 
 #technology img:hover {
@@ -151,11 +228,6 @@ h2> span {
 #technology .row div {
     margin-top: 30px;
     margin-bottom: 50px;
-}
-
-#skills h2 {
-    margin: 0px 20px 0px 0px !important;
-    text-align: right;
 }
 
 #skills .row {
@@ -172,7 +244,7 @@ h2> span {
 }
 
 .outer-level {
-    background-color: #90CAF9 !important;
+    background-color: #e7e7e7 !important;
     position: relative;
     display: table;
     padding-left: 0px;

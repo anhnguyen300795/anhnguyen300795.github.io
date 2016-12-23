@@ -1,0 +1,12 @@
+<div id="technology">
+    <div class="container">
+        <center>
+            <h1>Familiar technologies</h1>
+        </center>
+        <div class="row" style="margin-bottom: 60px;">
+            <div class="col-md-2 col-xs-3" ng-repeat="technology in $ctrl.technologies">
+                <img ng-src={{technology.image}} data-toggle="tooltip" data-placement="bottom" title={{technology.name}} alt={{technology.name}} onmouseenter="$(this).tooltip('show')">
+            </div>
+        </div>
+    </div>
+</div>
