@@ -101,6 +101,10 @@ nav a:hover {
     #main_image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/bg-mobile.jpg') !important;
     }
+    #non-animate p {
+        font-size: 20px;
+        color: white;
+    }
 }
 
 #main_image {
