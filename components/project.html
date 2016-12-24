@@ -4,12 +4,12 @@
 <div id="projects">
     <div class="container">
         <div class="row" ng-repeat="project in $ctrl.projects">
-            <div ng-class="{'col-md-7' :true, 'col-md-push-5': $index%2 !== 0}">
+            <div ng-class="{'col-md-7' :true, 'bounceInRight' :true , 'col-md-push-5': $index%2 !== 0}">
                 <h1>{{project.name}}</h1>
                 <p>{{project.description}}
                     <hr> Github repository of this project: <a ng-href="{{project.github}}"> Click here</a></p>
             </div>
-            <div ng-class="{'col-md-5':true, 'col-md-pull-7': $index%2 !== 0}">
+            <div ng-class="{'col-md-5':true, 'bounceInLeft' :true ,'col-md-pull-7': $index%2 !== 0}">
                 <div class="project-image" ng-style="{'background-image': 'url({{project.image}})'}">
                     <div>
                         <div class="filter"></div>

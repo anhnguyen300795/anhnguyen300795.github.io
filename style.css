@@ -28,6 +28,9 @@ body {
     #technology img {
         height: 150px;
     }
+    #about .tooltip {
+        margin-top: 30px !important;
+    }
     .tooltip {
         top: 110px !important;
     }
