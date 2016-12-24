@@ -28,7 +28,7 @@ app.component('techno', {
             image: "image/angular.png",
             name: "Angular"
         }, {
-            image: "image/meteor.svg",
+            image: "image/meteor.png",
             name: "MeteorJS"
         }, {
             image: "image/mongodb.png",
@@ -43,7 +43,7 @@ app.component('techno', {
             image: "image/sass.png",
             name: "Sass"
         }, {
-            image: "image/bootstrap.svg",
+            image: "image/bootstrap.png",
             name: "Bootstrap"
         }, {
             image: "image/python.png",
