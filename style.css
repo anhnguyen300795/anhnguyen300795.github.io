@@ -38,6 +38,9 @@ body {
     #non-animate {
         display: none;
     }
+    .navbar-brand img {
+        margin-top: -5px;
+    }
 }
 
 nav a {
@@ -52,9 +55,13 @@ nav a:hover {
     color: #222 !important;
 }
 
+.navbar-brand:hover {
+    background-color: transparent !important;
+}
+
 @media screen and (max-width: 700px) {
     .navbar-brand img {
-        margin-top: -10px;
+        margin-top: -15px;
     }
     #main_image {
         height: 600px;
@@ -107,6 +114,9 @@ nav a:hover {
     #non-animate p {
         font-size: 20px;
         color: white;
+    }
+    footer {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('image/small-map.jpg') !important;
     }
 }
 

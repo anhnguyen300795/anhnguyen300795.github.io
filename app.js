@@ -16,40 +16,40 @@ app.component('techno', {
     templateUrl: 'components/technology.html',
     controller: function() {
         this.technologies = [{
-            image: "https://i.stack.imgur.com/Mmww2.png",
+            image: "image/js.png",
             name: "JavaScript"
         }, {
-            image: "https://s3.amazonaws.com/media-p.slid.es/uploads/jhabdas/images/969312/react-logo-1000-transparent.png",
+            image: "image/react.png",
             name: "ReactJs"
         }, {
-            image: "http://blog.getstream.io/wp-content/uploads/2016/05/svgporn-redux-300x286.png",
+            image: "image/redux.png",
             name: "Redux"
         }, {
-            image: "http://cdn.dev.classmethod.jp/wp-content/uploads/2016/11/angular_high.png",
+            image: "image/angular.png",
             name: "Angular"
         }, {
-            image: "http://cubettech.com/wp-content/uploads/2015/10/meteor-icon2.svg",
+            image: "image/meteor.svg",
             name: "MeteorJS"
         }, {
-            image: "https://www.clouda.ca/wp-content/uploads/2013/03/mongodb-logo.png",
+            image: "image/mongodb.png",
             name: "MongoDB"
         }, {
-            image: "https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/nodejs-512.png",
+            image: "image/nodejs.png",
             name: "NodeJS"
         }, {
-            image: "http://ethiopiarabb.com/assets/images/icon-jquery.png",
+            image: "image/jquery.png",
             name: "Jquery"
         }, {
-            image: "http://marinam.tngconsulting.ca/wp-content/uploads/2015/06/marinamilette_sass.png",
+            image: "image/sass.png",
             name: "Sass"
         }, {
-            image: "http://lanet.co/img/language/boostrap.svg",
+            image: "image/bootstrap.svg",
             name: "Bootstrap"
         }, {
-            image: "http://iconshow.me/media/images/System/plex-icons/png/Other/512/python.png",
+            image: "image/python.png",
             name: "Python"
         }, {
-            image: "http://nedbatchelder.com/pix/django-icon-256.png",
+            image: "image/django.png",
             name: "Django"
         }]
     }
