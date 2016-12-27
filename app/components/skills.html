@@ -1,0 +1,16 @@
+<div id="skills">
+    <div class="container">
+        <center>
+            <h1>My skills</h1>
+        </center>
+        <div class="row" ng-repeat="skill in $ctrl.skills">
+            <div class="col-sm-4 col-xs-12">
+                <h2>{{skill.name}}</h2>
+            </div>
+            <div class="col-sm-7 col-xs-12 outer-level">
+                <div class="level-bar" ng-style="{'width': skill.level+'%'}"></div>
+                <span class="percent">{{skill.level}}%</span>
+            </div>
+        </div>
+    </div>
+</div>
