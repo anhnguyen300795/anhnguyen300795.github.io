@@ -91,7 +91,7 @@ app.component('skills', {
 
 app.component('projects', {
     templateUrl: 'components/project.html',
-    controller: function() {
+    controller: function($scope) {
         this.projects = [{
             name: "FASHION WEB SHOP",
             time: "Oct-Dec 2016",
@@ -113,7 +113,17 @@ app.component('projects', {
             demo: "https://github.com/anhnguyen300795/Facial-recognition-web-app",
             github: "https://github.com/anhnguyen300795/Facial-recognition-web-app",
             image: "image/face.png"
-        }, ]
+        }, ];
+
+        this.animate = false;
+        var scroll = function() {
+            if (window.scrollY >= 2400 && window.innerWidth > 600) {
+                this.animate = true;
+                $scope.$apply();
+                window.removeEventListener('scroll', scroll);
+            }
+        }.bind(this);
+        window.addEventListener("scroll", scroll);
     }
 });
 
